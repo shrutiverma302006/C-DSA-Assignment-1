@@ -1,4 +1,4 @@
-# C-DSA-Assignment-1
+o# C-DSA-Assignment-1
 Q1. Design and Implement a Stack Using an Array
 
 Aim-
@@ -389,6 +389,7 @@ Only forward
 Wraps around using modulo
 
 1. Why does a Circular Queue provide better utilization of memory?
+   
 In a simple linear queue, suppose the array size is 5:
 [10] [20] [30] [40] [50]
  F                   R
@@ -401,18 +402,21 @@ A circular queue solves this problem by moving rear back to the beginning:
  R     R? 
 Thus, previously freed positions can be reused.
 
-2. Time Complexity of ENQUEUE and DEQUEUE
+2. Time Complexity of ENQUEUE and DEQUEUE.
+
 Both operations take:
 ENQUEUE = O(1)
 DEQUEUE = O(1)
 No shifting of elements is required. The front and rear are simply moved using the modulo operation.
 
-3. Space Complexity
+3. Space Complexity in a queue.
+   
 For an array of size n, the circular queue requires:
 Space Complexity = O(n)
 because the array can store at most n elements.
 
-4. Problem with a Linear Queue When REAR Reaches the Last Index
+4. Problem with a Linear Queue When REAR Reaches the Last Index.
+
 Consider:
 [  ] [  ] [30] [40] [50]
                     R
