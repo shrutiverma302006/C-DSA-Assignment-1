@@ -144,8 +144,8 @@ int main()
 
     return 0;
 }
-Complexity Analysis
-Operation
+Complexity Analysis-
+Operation:
 Time Complexity
 Space Complexity
 PUSH
@@ -161,7 +161,7 @@ DISPLAY
 O(n)
 O(1)
 The complete stack requires O(n) space, where n is the maximum stack capacity.
-Fixed-Size Stack
+Fixed-Size Stack:
 If the stack size is fixed, for example MAX = 5, it can contain only 5 elements.
 If the user tries:
 PUSH(10)
@@ -171,15 +171,18 @@ PUSH(40)
 PUSH(50)
 PUSH(60)
 the sixth insertion cannot be performed because the array is full. Therefore, Stack Overflow occurs.
-Q2. Implement a Circular Queue Using an Array
-Aim
+
+Q2. Implement a Circular Queue Using an Array?
+
+Aim-
 To implement a Circular Queue using an array and perform:
 ENQUEUE(x)
 DEQUEUE()
 FRONT()
 DISPLAY()
 The implementation must correctly distinguish between a full queue and an empty queue.
-Theory
+
+Theory-
 A Queue is a linear data structure that follows the FIFO (First In, First Out) principle.
 The element inserted first is removed first.
 A Circular Queue is a queue in which the last position of the array is connected back to the first position.
@@ -188,7 +191,8 @@ For an array of size 5:
 ^                   |
 |___________________|
 When rear reaches the last index, it can move back to index 0 if space is available.
-Circular Queue Operations
+
+Circular Queue Operations-
 ENQUEUE(x) – Inserts an element at the rear.
 DEQUEUE() – Removes an element from the front.
 FRONT() – Displays the front element.
@@ -200,7 +204,8 @@ Full Condition
 The queue is full when:
 (rear + 1) % MAX == front
 This condition allows us to use the unused positions at the beginning of the array.
-Algorithm
+
+Algorithm-
 ENQUEUE(x)
 Check whether (rear + 1) % MAX == front.
 If true, display Queue Overflow.
@@ -382,6 +387,7 @@ Yes
 Rear movement
 Only forward
 Wraps around using modulo
+
 1. Why does a Circular Queue provide better utilization of memory?
 In a simple linear queue, suppose the array size is 5:
 [10] [20] [30] [40] [50]
@@ -394,15 +400,18 @@ A circular queue solves this problem by moving rear back to the beginning:
 [60] [70] [30] [40] [50]
  R     R? 
 Thus, previously freed positions can be reused.
+
 2. Time Complexity of ENQUEUE and DEQUEUE
 Both operations take:
 ENQUEUE = O(1)
 DEQUEUE = O(1)
 No shifting of elements is required. The front and rear are simply moved using the modulo operation.
+
 3. Space Complexity
 For an array of size n, the circular queue requires:
 Space Complexity = O(n)
 because the array can store at most n elements.
+
 4. Problem with a Linear Queue When REAR Reaches the Last Index
 Consider:
 [  ] [  ] [30] [40] [50]
