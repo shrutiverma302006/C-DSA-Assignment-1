@@ -1,7 +1,7 @@
 # C-DSA-Assignment-1
 Q1. Design and Implement a Stack Using an Array
 
-Aim
+Aim-
 To implement a Stack using an array without using any built-in stack library and perform the following operations:
 PUSH(x)
 POP()
@@ -9,7 +9,7 @@ PEEK()
 DISPLAY()
 The program should also handle Stack Overflow and Stack Underflow conditions.
 
-Theory
+Theory-
 A Stack is a linear data structure that follows the LIFO (Last In, First Out) principle. The element inserted last is removed first.
 For example:
 PUSH(10)
@@ -22,17 +22,17 @@ Stack:
 | 10 |
 If POP() is performed, 30 will be removed first.
 
-Stack Operations
+Stack Operations-
 PUSH(x) – Inserts an element at the top.
 POP() – Removes the top element.
 PEEK() – Displays the top element without removing it.
 DISPLAY() – Displays all elements from top to bottom.
-Stack Overflow
+Stack Overflow-
 When the stack is already full and we try to insert another element, Stack Overflow occurs.
-Stack Underflow
+Stack Underflow-
 When the stack is empty and we try to remove or access an element, Stack Underflow occurs.
 
-Algorithm
+Algorithm-
 PUSH(x)
 Check whether top == MAX - 1.
 If true, display Stack Overflow.
