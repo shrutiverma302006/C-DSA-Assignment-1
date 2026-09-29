@@ -363,6 +363,7 @@ int main()
     return 0;
 }
 Comparison: Circular Queue vs Linear Queue
+
 Feature
 Linear Queue
 Circular Queue
