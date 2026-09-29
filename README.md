@@ -1,4 +1,5 @@
-o# C-DSA-Assignment-1
+# C-DSA-Assignment-1
+
 Q1. Design and Implement a Stack Using an Array
 
 Aim-
